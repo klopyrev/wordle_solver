@@ -1,7 +1,6 @@
 # Overview
 
-The attached C++ binary solves Wordle optimally. The best starting word is
-`plate`!
+My C++ program solves Wordle optimally. The best starting word is `plate`!
 
 A few other really good words: tripe, scale, train, place, stole, spilt, lapse,
 parse, pearl and close.
@@ -16,6 +15,13 @@ assuming each of the 2315 possible words is equally probable.
 Note that it only ever guesses words that are still possible, given all the
 previous guesses. It's conceivable that there is a better strategy that sometimes
 plays words that are no longer possible.
+
+# Results for First Word
+
+The file `result1.txt` contains all guesses for the first word that guarantee a
+win. They are sorted by the expected number of guesses you would have to make
+if you guess that word first. The expected value includes that first guess as
+well.
 
 # Usage
 
@@ -51,13 +57,6 @@ Computation is done. Play the word: cease
 
 Note the computation of the starting word takes more than 2 hours. The
 computation given any guesses only takes a few seconds.
-
-# Results for First Word
-
-The file `result1.txt` contains all guesses for the first word that guarantee a
-win. They are sorted by the expected number of guesses you would have to make
-if you guess that word first. The expected value includes that first guess as
-well.
 
 # Algorithm Description
 
