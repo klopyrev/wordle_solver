@@ -252,7 +252,8 @@ void Thread(
       fout << result << " " << words[first_word] << std::endl;
       fout.flush();
 
-      if (!min_expected || result < *min_expected) {
+      if (!min_expected || result < *min_expected ||
+          (result == *min_expected && first_word < best_word)) {
         min_expected = result;
         best_word = first_word;
       }
