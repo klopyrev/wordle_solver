@@ -3,12 +3,15 @@
 The attached C++ binary solves Wordle optimally. The best starting word is
 `plate`!
 
+A few other really good words: tripe, scale, train, place, stole, spilt, lapse,
+parse, pearl and close.
+
+This program will always win, and guarantees the smallest average number of
+guesses if you play all 2315 possible games.
+
 It computes the next word to play, given any guesses already made. The word it
 returns minimizes the expected number of guesses you would need to make,
 assuming each of the 2315 possible words is equally probable.
-
-That is, it plays in such a way that it minimizes the number of guesses you need
-to make on average playing all 2315 possible games.
 
 Note that it only ever guesses words that are still possible, given all the
 previous guesses. It's conceivable that there is a better strategy that sometimes
